@@ -1,11 +1,39 @@
 import React from "react";
 
-import { Container } from "./styles";
+import {
+  Container,
+  MenuWrapper,
+  IconStyleWrapper,
+  MenuIcon,
+  Logo,
+  SearchBar,
+  IconsWrapper,
+  AddVideoIcon,
+  AppsIcon,
+  BellIcon,
+  ProfilePic,
+} from "./styles";
 
 function Navbar() {
   return (
     <Container>
-      <h1>ola mundo</h1>
+      <MenuWrapper>
+        <IconStyleWrapper>
+          <MenuIcon />
+        </IconStyleWrapper>
+        <Logo />
+      </MenuWrapper>
+
+      <SearchBar />
+
+      <IconsWrapper>
+        <IconStyleWrapper>
+          <AddVideoIcon />
+          <AppsIcon />
+          <BellIcon />
+        </IconStyleWrapper>
+        <ProfilePic />
+      </IconsWrapper>
     </Container>
   );
 }

@@ -23,6 +23,7 @@ html, body, #root {
 :root {
   --white: #fff;
   --background-grey: #c3c3c3;
+  --light-grey: #c3c3c3;
   --grey: #606060;
 }
 `;
