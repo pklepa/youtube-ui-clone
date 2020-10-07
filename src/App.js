@@ -1,12 +1,22 @@
 import React from "react";
 
-import "./assets/styles/reset.css";
-import "./assets/fonts/fonts.css";
+import GlobalStyles from "./assets/styles/GlobalStyles";
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import VideoArea from "./components/VideoArea";
+import SuggestionList from "./components/SuggestionList";
 
 function App() {
   return (
     <>
-      <h1 style={{ fontFamily: "Roboto" }}>The Odin Project</h1>
+      <GlobalStyles />
+
+      <Layout>
+        <Navbar />
+
+        <VideoArea />
+        <SuggestionList />
+      </Layout>
     </>
   );
 }
