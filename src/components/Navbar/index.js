@@ -2,12 +2,13 @@ import React from "react";
 
 import Logo from "../../assets/images/yt-logo.png";
 
+import SearchBar from "../SearchBar";
+
 import {
   Container,
   MenuWrapper,
   IconStyleWrapper,
   MenuIcon,
-  SearchBar,
   IconsWrapper,
   AddVideoIcon,
   AppsIcon,
