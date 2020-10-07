@@ -7,7 +7,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  position: fixed;
   padding: 0px 16px;
+  width: 100%;
+  height: 56px;
 
   grid-area: NAV;
 
@@ -35,14 +38,6 @@ export const IconStyleWrapper = styled.div`
 
 export const MenuIcon = styled(Menu)`
   margin-right: 16px !important;
-`;
-
-export const SearchBar = styled.div`
-  width: 640px;
-  height: 30px;
-
-  border: 1px solid var(--light-grey);
-  border-radius: 2px;
 `;
 
 export const IconsWrapper = styled.div`
