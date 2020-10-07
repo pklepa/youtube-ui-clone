@@ -1,11 +1,12 @@
 import React from "react";
 
+import Logo from "../../assets/images/yt-logo.png";
+
 import {
   Container,
   MenuWrapper,
   IconStyleWrapper,
   MenuIcon,
-  Logo,
   SearchBar,
   IconsWrapper,
   AddVideoIcon,
@@ -21,7 +22,7 @@ function Navbar() {
         <IconStyleWrapper>
           <MenuIcon />
         </IconStyleWrapper>
-        <Logo />
+        <img height="44" src={Logo} alt="Logo" srcset="" />
       </MenuWrapper>
 
       <SearchBar />

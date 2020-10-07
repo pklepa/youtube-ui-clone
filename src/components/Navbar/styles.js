@@ -33,13 +33,8 @@ export const IconStyleWrapper = styled.div`
   }
 `;
 
-export const MenuIcon = styled(Menu)``;
-
-export const Logo = styled.div`
-  width: 80px;
-  height: 30px;
-
-  background-color: crimson;
+export const MenuIcon = styled(Menu)`
+  margin-right: 16px !important;
 `;
 
 export const SearchBar = styled.div`
