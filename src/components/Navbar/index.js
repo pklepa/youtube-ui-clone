@@ -23,7 +23,7 @@ function Navbar() {
         <IconStyleWrapper>
           <MenuIcon />
         </IconStyleWrapper>
-        <img height="44" src={Logo} alt="Logo" srcset="" />
+        <img height="44" src={Logo} alt="Logo" />
       </MenuWrapper>
 
       <SearchBar />
