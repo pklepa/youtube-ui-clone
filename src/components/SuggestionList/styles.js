@@ -65,3 +65,11 @@ export const AutoplaySwitch = styled.div`
     transition: transform linear 0.08s, background-color linear 0.08s;
   }
 `;
+
+export const Separator = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+
+  margin: 8px 0 16px;
+`;

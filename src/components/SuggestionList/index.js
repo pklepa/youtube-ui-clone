@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 import VideoCard from "../VideoCard";
-import { Container, AutoplayWrapper, AutoplaySwitch } from "./styles";
+import {
+  Container,
+  AutoplayWrapper,
+  AutoplaySwitch,
+  Separator,
+} from "./styles";
 
 function SuggestionList() {
   const [autoPlay, setAutoPlay] = useState(false);
@@ -27,6 +32,9 @@ function SuggestionList() {
         isNew
         duration="19:59"
       />
+
+      <Separator />
+
       <VideoCard
         thumb="http://i3.ytimg.com/vi/kTXTPe3wahc/maxresdefault.jpg"
         videoName="Parallel Worlds Probably Exist. Here's Why"
