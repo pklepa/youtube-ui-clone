@@ -55,8 +55,8 @@ export const AppsIcon = styled(Apps)``;
 export const BellIcon = styled(Notifications)``;
 
 export const ProfilePic = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   margin: 0 15px 0 8px;
 
