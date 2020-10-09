@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   grid-area: SL;
+
+  width: 426px;
   min-height: 1040px;
 
   background-color: var(--background-grey);

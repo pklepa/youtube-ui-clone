@@ -7,7 +7,7 @@ import styled from "styled-components";
 export const Grid = styled.div`
   display: grid;
 
-  grid-template-columns: auto 426px;
+  grid-template-columns: auto minmax(426px, auto);
   grid-template-rows: 56px auto;
 
   grid-template-areas:
@@ -15,6 +15,8 @@ export const Grid = styled.div`
     "VA SL";
 
   min-height: 100%;
+
+  background-color: var(--background-grey);
 
   @media (max-width: 1000px) {
     grid-template-columns: auto;
