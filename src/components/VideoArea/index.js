@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 
+import commentsData from "../../assets/data/comments.json";
+
 import {
   Container,
   VideoPlayer,
   PrimaryVideoInfo,
   SecondaryVideoInfo,
   CommentsHeader,
-  Comments,
+  ProfilePic,
+  CommentInput,
+  CommentsContainer,
+  Comment,
+  CommentReactionBar,
   FakeCommentsLoader,
   VideoDetails,
   ActionButtons,
@@ -20,6 +26,7 @@ import {
   SaveButton,
   SaveIcon,
   MoreIcon,
+  FilterIcon,
   UpperDiv,
   ChannelHeader,
   ChannelProfilePic,
@@ -30,6 +37,8 @@ import {
 
 function VideoArea() {
   const [showFullDescription, setShowFullDescription] = useState(false);
+
+  console.log(commentsData);
 
   return (
     <Container>
@@ -130,8 +139,46 @@ function VideoArea() {
         </Description>
       </SecondaryVideoInfo>
 
-      <CommentsHeader />
-      <Comments />
+      <CommentsHeader>
+        <div className="comments-top-bar">
+          <h2>27 comments</h2>
+          <FilterIcon />
+          <span>FILTER</span>
+        </div>
+
+        <div className="comment">
+          <ProfilePic />
+          <CommentInput placeholder="Add a public comment..." />
+        </div>
+      </CommentsHeader>
+
+      <CommentsContainer>
+        {commentsData.map((comment) => {
+          return (
+            <>
+              <Comment>
+                <ProfilePic img={comment.profile_pic} />
+
+                <div className="comment-wrapper">
+                  <div className="comment-header">
+                    <h1>{comment.name}</h1>
+                    <span>{comment.date}</span>
+                  </div>
+
+                  <p>{comment.content}</p>
+                </div>
+              </Comment>
+
+              <CommentReactionBar>
+                <LikeIcon />
+                <span>{comment.likes}</span>
+                <DislikeIcon />
+                <span>REPLY</span>
+              </CommentReactionBar>
+            </>
+          );
+        })}
+      </CommentsContainer>
 
       <FakeCommentsLoader />
     </Container>

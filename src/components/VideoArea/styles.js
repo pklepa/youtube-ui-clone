@@ -3,6 +3,7 @@ import { Like, Dislike } from "styled-icons/boxicons-solid";
 import { ShareForward } from "styled-icons/remix-fill";
 import { PlaylistAdd } from "styled-icons/material-outlined";
 import { MoreHoriz } from "styled-icons/material";
+import { FilterLeft } from "styled-icons/bootstrap";
 
 export const Container = styled.main`
   display: flex;
@@ -202,8 +203,133 @@ export const ShowMoreButton = styled.button`
   margin: 10px 0;
 `;
 
-export const CommentsHeader = styled.div``;
+export const CommentsHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 16px 0 12px;
 
-export const Comments = styled.div``;
+  .comments-top-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    h2 {
+      color: black;
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    span {
+      color: var(--grey);
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .comment {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 32px;
+  }
+`;
+
+export const FilterIcon = styled(FilterLeft)`
+  color: var(--grey);
+  height: 25px;
+  width: 25px;
+
+  margin: 0 8px 0 32px;
+  cursor: pointer;
+`;
+
+export const ProfilePic = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  /* background-image: url("https://lh3.googleusercontent.com/a-/AOh14GhF5DE1KPWGF1TZ06qXhf-TexiC2ZAfuHVnY_KKVA=s88-c-k-c0x00ffffff-no-rj-mo"); */
+  background-image: url("${(props) =>
+    props.img ||
+    "https://lh3.googleusercontent.com/a-/AOh14GhF5DE1KPWGF1TZ06qXhf-TexiC2ZAfuHVnY_KKVA=s88-c-k-c0x00ffffff-no-rj-mo"}");
+  background-size: cover;
+
+  cursor: pointer;
+`;
+
+export const CommentInput = styled.input`
+  width: 100%;
+
+  background: none;
+  border-bottom: 1px solid #e0e0e0;
+
+  color: black;
+  font-size: 15px;
+  line-height: 1.5em;
+
+  padding-bottom: 4px;
+`;
+
+export const CommentsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const Comment = styled.div`
+  display: flex;
+  align-items: center;
+
+  .comment-header {
+    display: flex;
+    align-items: center;
+    line-height: 1.5em;
+
+    h1 {
+      color: black;
+      font-size: 13px;
+      font-weight: 500;
+      margin-right: 8px;
+    }
+
+    span {
+      color: var(--grey);
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+
+  p {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+`;
+
+export const CommentReactionBar = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 6px 0 24px 54px;
+
+  svg {
+    height: 18px;
+    width: 18px;
+    color: #909090;
+  }
+
+  span {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 12px;
+  }
+`;
 
 export const FakeCommentsLoader = styled.div``;
