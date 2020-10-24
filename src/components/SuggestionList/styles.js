@@ -75,3 +75,13 @@ export const Separator = styled.div`
 
   margin: 8px 0 16px;
 `;
+
+export const FakeLoader = styled.div`
+  display: flex;
+  justify-content: center;
+
+  margin-top: 16px;
+
+  width: 100%;
+  height: 32px;
+`;

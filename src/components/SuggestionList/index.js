@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
+import loadingImg from "../../assets/images/loading.svg";
+
 import VideoCard from "../VideoCard";
 import {
   Container,
   AutoplayWrapper,
   AutoplaySwitch,
   Separator,
+  FakeLoader,
 } from "./styles";
 
 function SuggestionList() {
@@ -55,6 +58,10 @@ function SuggestionList() {
         isNew
         duration="19:59"
       />
+
+      <FakeLoader>
+        <img src={loadingImg} alt="Loading..." />
+      </FakeLoader>
     </Container>
   );
 }
