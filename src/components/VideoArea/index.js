@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import commentsData from "../../assets/data/comments.json";
+import loadingImg from "../../assets/images/loading.svg";
 
 import {
   Container,
@@ -180,7 +181,9 @@ function VideoArea() {
         })}
       </CommentsContainer>
 
-      <FakeCommentsLoader />
+      <FakeCommentsLoader>
+        <img src={loadingImg} alt="Loading..." />
+      </FakeCommentsLoader>
     </Container>
   );
 }

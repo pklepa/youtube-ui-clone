@@ -332,4 +332,10 @@ export const CommentReactionBar = styled.div`
   }
 `;
 
-export const FakeCommentsLoader = styled.div``;
+export const FakeCommentsLoader = styled.div`
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 32px;
+`;
