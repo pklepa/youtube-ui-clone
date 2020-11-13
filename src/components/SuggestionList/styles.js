@@ -20,6 +20,8 @@ export const AutoplayWrapper = styled.div`
   width: 100%;
   margin-bottom: 16px;
 
+  cursor: pointer;
+
   h1 {
     color: black;
     font-size: 16px;
