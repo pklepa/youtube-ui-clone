@@ -43,7 +43,17 @@ function VideoArea() {
 
   return (
     <Container>
-      <VideoPlayer />
+      <VideoPlayer>
+        <iframe
+          title="MainVideo"
+          width="900"
+          height="550"
+          src="https://www.youtube.com/embed/nUrS0kqoH4c"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </VideoPlayer>
 
       <PrimaryVideoInfo>
         <h1>

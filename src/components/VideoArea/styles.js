@@ -17,8 +17,8 @@ export const Container = styled.main`
 `;
 
 export const VideoPlayer = styled.div`
-  width: 1280px;
-  height: 720px;
+  width: 900px;
+  height: 550px;
 
   background-color: #e0e0e0;
 `;
